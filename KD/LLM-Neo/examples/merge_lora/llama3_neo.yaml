@@ -1,0 +1,12 @@
+### NOTE: DO NOT use quantized model or quantization_bit when merging lora adapters
+
+### model
+model_name_or_path: /apdcephfs_qy3/share_301069248/users/rummyyang/minillm/checkpoints/llama3.2/Llama-3.2-1B
+adapter_name_or_path: saves/llama3-1b/lora/neo
+template: llama3
+
+### export
+export_dir: output/llama3_neo
+export_size: 5
+export_device: cpu
+export_legacy_format: false

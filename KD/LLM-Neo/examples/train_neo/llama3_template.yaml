@@ -1,0 +1,35 @@
+# Model configuration and KD
+model_name_or_path: {model_name}
+{kd_config}
+
+# Training methodology
+stage: {stage}
+do_train: true
+finetuning_type: {ft_type}
+{lora_config}
+deepspeed: examples/deepspeed/ds_z2_config.json  # options: [ds_z0_config.json, ds_z2_config.json, ds_z3_config.json]
+
+# Dataset configuration
+dataset: {dataset}
+template: {template}
+cutoff_len: {cutoff_len}
+max_samples: {max_samples}
+overwrite_cache: {overwrite_cache}
+preprocessing_num_workers: 16
+
+# Output configuration
+output_dir: {output_dir}
+logging_steps: {logging_steps}
+save_steps: {save_steps}
+plot_loss: {plot_loss}
+overwrite_output_dir: true
+
+# Training parameters
+per_device_train_batch_size: {batch_size}
+gradient_accumulation_steps: {grad_accum}
+learning_rate: {lr}
+num_train_epochs: {epochs}
+lr_scheduler_type: cosine
+warmup_ratio: 0.1
+bf16: true
+ddp_timeout: 180000000
