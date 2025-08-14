@@ -1,6 +1,6 @@
 # Pruning Pipeline
 
-This folder contains a pipeline for applying three pruning techniques (SparseGPT, Wanda and L1 Magnitude based Pruning). The pruning process is implemented in the `final-pruning.ipynb` notebook.
+This folder contains a pipeline for applying three pruning techniques (SparseGPT, Wanda and L1 Magnitude based Pruning). The pruning process is implemented in the [Pruning Script](final-pruning.ipynb) notebook.
 
 
 
@@ -18,7 +18,7 @@ The model used was Meta LLama : Llama-3.2-3B-Instruct for Pruning from which the
 	[Link:https://huggingface.co/AlphaAnas70/pruned_llama3b_DSnoT_with_Wanda_18_per]()
 
 
-Refer to Github Link at `Github Link.txt` for the code implementation
+Refer to Github Link at [Github Repo](https://github.com/AlphaAnas/DSnoT) for the code implementation
 
 Refer to the notebook for detailed implementation and results.
 
